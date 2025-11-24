@@ -5,10 +5,10 @@
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
+    <title>Wedding Invitations Namrata & Shubham</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
-    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
+    <meta property="og:title" content="Undangan Pernikahan Namrata & Shubham - Hari, 21 April 2021">
+    <meta property="og:description" content="Undangan Pernikahan Namrata & Shubham - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
     <meta property="og:locale" content="id_ID" />
     <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
     <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
@@ -44,9 +44,9 @@
   <body>
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
-      <div class="preloader">
+      <!-- <div class="preloader">
         <img src="image/favicon.png" alt="Flower" />
-      </div>
+      </div> -->
     </div>
     <!-- End Preloader-->
     <!-- Begin Header -->
@@ -68,16 +68,16 @@
             <div class="navbar-end">
               <div class="navbar-item">
                 <a class="navbar-item" href="#Waktu">
-                  Waktu
+                  Time
                 </a>
               </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#lokasi">
-                  Lokasi
+                  Location
                 </a>
               </div>
               
-              <div class="navbar-item">
+              <!-- <div class="navbar-item">
                 <a class="navbar-item" href="#tentang-pasangan">
                   Tentang CPW dan CPP
                 </a>
@@ -86,7 +86,7 @@
                 <a class="navbar-item" href="#rsvp">
                   RSVP
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </nav>
@@ -94,50 +94,60 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Nama Wanita & Nama Pria</h2>
+            <h1 class="subtitle">Wedding Invitations</h1>
+            <h2 class="title">Namrata & Shubham</h2>
             <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 21 April 2021 
+
+                Sunday, 30 November 2025
                 </br>
-                [Nama Tempat], [Nama Area]
+                Tara Bhavan, Ambewadi
                 </br>
-                [Nama Kota]
+                Belgaum, Karnataka, India
               
             </h4>
           </div>
           <!-- Start Countdown -->       
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+  <ul id="countdown">
+    <li><span id="days">00</span><p>Days</p></li>
+    <li class="separator">:</li>
+    <li><span id="hours">00</span><p>Hours</p></li>
+    <li class="separator">:</li>
+    <li><span id="minutes">00</span><p>Minutes</p></li>
+    <li class="separator">:</li>
+    <li><span id="seconds">00</span><p>Seconds</p></li>
+  </ul>
+</div>
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
-              });
-            </script>  
-          </div>
+<!-- jQuery -->
+<script>
+  // Set the target date
+  const targetDate = new Date("November 30, 2025 12:30:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerHTML = "Countdown Completed!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
           <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
@@ -151,18 +161,18 @@
                     <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#Waktu">Waktu</a>
+                    <a href="#Waktu">Time</a>
                   </li>
                   <li>
-                    <a href="#lokasi">Lokasi</a>
+                    <a href="#lokasi">Location</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#tentang-pasangan">Tentang CPW & CPP</a>
                   </li>
 
                   <li>
                     <a href="#rsvp">RSVP</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -179,16 +189,16 @@
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
         
-        <div data-aos="fade-up" data-aos-easing="linear">
+        <!-- <div data-aos="fade-up" data-aos-easing="linear">
           <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
-        </div>
+        </div> -->
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          <!-- Assalamu'alaikum Warahmatullahi Wabarakatuh.
           <br />
           Dengan memohon rahmat dan ridha Allah swt, 
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+          <br /> -->
+          we intend to invite you to our wedding ceremony
         </p>
 
         <span class="space40px"></span>
@@ -196,11 +206,11 @@
 
         <div data-aos="fade-up" data-aos-easing="linear">
           <div class="nama-lengkap" >
-            Nama Calon Mempelai Wanita
+            Namrata Kadam
           </div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
-          Nama Calon Mempelai Pria
+            Shubham Sawant
           </div>
            
         </div>
@@ -218,30 +228,30 @@
         <div class="container">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
+            <h1 class="title has-text-centered section-title">Time</h1>
           </div>
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
             <div
-              class="column is-4 has-vertically-aligned-content">
+              class="column is-6 has-vertically-aligned-content">
             
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">21</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Maret 2020</div>
+                  <div class="waktu tanggal-hari has-text-centered">Sunday</div> 
+                  <div class="waktu tanggal-angka has-text-centered">30</div>
+                  <div class="waktu tanggal-bulan has-text-centered">November 2025</div>
               </p>
             
             </div>
-            <div class="column is-4 has-vertically-aligned-content">
+            <div class="column is-6 has-vertically-aligned-content">
             
               <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
+                At
                 <br>
-                <strong>17.00 WIB</strong>
+                <strong>12:30</strong>
               </p>
             
             </div>
 
-            <div class="column is-4 has-vertically-aligned-content">
+            <!-- <div class="column is-4 has-vertically-aligned-content">
               
               <h1 class="waktu is-larger has-text-centered">
                 Resepsi:
@@ -250,17 +260,17 @@
               </h1>
               
               
-            </div>
+            </div> -->
 
           </div>
         </div>
         <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+        <!-- <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
           <a href="https://calendar.google.com/event?action=TEMPLATE..." target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
             &nbsp;&nbsp;Google Calendar
           </a>
-        </div>
+        </div> -->
       </section>
       <!-- End Waktu Content -->
 
@@ -268,18 +278,18 @@
       <section class="section-darker" id="lokasi" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <h1 class="title has-text-centered section-title">Location</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>Nama Tempat</strong>
+              <strong>Tara Bhavan Mangal Karyalay</strong>
               <br>
-              Jl. Alamat Lengkap No.9, RT.001/RW.006A,  
+            VFR8+V8J, Ambewadi,Belgaum,
               <br>
-              Kecamatan XXX, Kota XXX, Provinsi XXX
+               Karnataka 591108
               <br>
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.3391237911774!2d74.46204707513215!3d15.89129478476274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf63006dbe1559%3A0x6fff86baa4a0e0c5!2sTara%20Bhavan%20mangal%20karyalay!5e0!3m2!1sen!2sin!4v1764001326293!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
           <div class="space40px"></div>
           <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
@@ -293,16 +303,16 @@
       <!-- End Lokasi Content -->
 
       <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+      <!-- <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
         <div class="container">
           <div class="columns is-multiline">  
           <div class="column has-text-centered is-12 prolog">
             <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1>
-            
+             -->
 
           
           <!-- IMAGES -->  
-        <div class=" tile">
+        <!-- <div class=" tile">
           <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
@@ -366,9 +376,9 @@
             </div>
           </article>
         </div>
-      </div>   
+      </div>    -->
           <!-- IMAGES -->
-          <div class="space40px"></div>
+          <!-- <div class="space40px"></div>
             <div data-aos="fade-up" data-aos-easing="linear">
               <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
             </div> 
@@ -377,11 +387,11 @@
 
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
 
       <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
+      <!-- <section class="section-dark contact" id="rsvp">
         <div class="container">
           <div class="columns is-multiline">          
             <div class="column is-12 prolog">
@@ -442,7 +452,7 @@
  
          </div>
         </div>
-      </section>
+      </section> -->
       <!-- End RSVP Content -->
     </div>
     <!-- End Main Content -->
@@ -451,14 +461,14 @@
     <div class="footer">
       <div class="container">
         <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
-          <p class="has-vertically-align">2020-2025 &copy @daengdoang </p>
+          <p class="has-vertically-align">2020-2025 &copy @prathamesh.sutar7 </p>
         </a>
-        <a href="https://bulma.io" class="has-vertically-align">
+        <!-- <a href="https://bulma.io" class="has-vertically-align">
           <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma">
         </a>
         <a href="https://www.netlify.com">
           <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
-        </a>
+        </a> -->
       </div>
     </div>
     <!-- End Footer -->
